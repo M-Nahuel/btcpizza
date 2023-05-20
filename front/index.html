@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!--<link rel="stylesheet" href="use.fontawesome.com/releases/v5.8.2/css/all.css">-->
+        <title>Bitcoin Pizza</title>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav id="navbar" class="nav">
+                    <div class="logo">
+                        <!--Replace this-->
+                        <img class="logo-img" src="" alt="logo" />
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#home-section">Home</a>
+                        </li>
+                        <li>
+                            <a href="#order-section">Order Now</a>
+                        </li>
+                        <li>
+                            <a href="#locations-section">Locations</a>
+                        </li>
+                        <li>
+                            <a href="#about-section">About us</a>
+                        </li>
+                        <li>
+                            <a href="#work-section">Work at Bitcoin Pizza's</a>
+                            <p>We're Hiring!</p>
+                        </li>
+                        <li>
+                            <a href="#contact-section">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="info-list">
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#nutritional-info">Nutritional Info</a>
+                        </li>
+                        <li>
+                            <a href="#terms-of-use">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="#privacy-cookies">Privacy & Cookies</a>
+                        </li>
+                        <li>
+                            <a href="#hodler-discount">HODLER discount</a>
+                        </li>
+                    </ul>
+                    <div id="lang">
+                        <p>Language:</p>
+                        <p id="language"></p>
+                    </div>
+                </nav>
+            </header>
+            <section id="home-section">
+                <div id="main-img">
+                    <!--Fill this-->
+                    <img class="menu-img" src="" alt="pizza"/>
+                </div>
+                <div id="grid-menu">
+                    <!--Fill this-->
+                    <img class="menu-img" src="" alt="pizza"/>
+                    <img class="menu-img" src="" alt="pizza"/>
+                    <img class="menu-img" src="" alt="pizza"/>
+                    <img class="menu-img" src="" alt="pizza"/>
+                    <img class="menu-img" src="" alt="pizza"/>
+                    <img class="menu-img" src="" alt="pizza"/>
+                    <img class="menu-img" src="" alt="pizza"/>
+                    <img class="menu-img" src="" alt="pizza"/>
+                    <img class="menu-img" src="" alt="pizza"/>
+                    <img class="menu-img" src="" alt="pizza"/>
+                    <img class="menu-img" src="" alt="pizza"/>
+                    <img class="menu-img" src="" alt="pizza"/>
+                </div>
+            </section>
+            <section id="order-section">
+                <div id="order">
+                    <p>Enter your address to see your local Bitcoin Pizza's menu.</p>
+                    <input type="text" placeholder="Enter your address here."/>
+                    <!--Hide this-->
+                    <div id="response">
+                        <p id="error-handling"></p>
+                        <a href="#locations-section">See our stores here.</a>
+                    </div>
+                </div>
+            </section>
+            <section id="locations-section">
+                <div id="locations">
+                    <div id="map">
+                        <!--Add Google Maps here-->
+                    </div>
+                    <div id="locations-info">
+                        <!--Change this-->
+                        <p>Location 1</p>
+                        <p>Location 2</p>
+                    </div>
+                </div>
+            </section>
+            <section id="about-section">
+                <div id="about">
+                    <!--Add info here-->
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="work-section">
+                <div id="work">
+                    <h4>Be part of our team!</h4>
+                    <form id="hiring">
+                        <!--Change form details-->
+                        <form method="post" action='add Url here'>
+                            <fieldset>
+                              <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                              <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                              <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+                              <label for="cv">Upload CV<input id="cv" type="file" name="file" required /></label>
+                              <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+                            </fieldset>
+                            <fieldset>
+                              <label for="referrer">How did you hear about us?
+                                <select id="referrer" name="referrer">
+                                  <option value="">(select one)</option>
+                                  <option value="1">Social Media</option>
+                                  <option value="2">Newspaper</option>
+                                  <option value="3">TV & Radio</option>
+                                  <option value="4">Other</option>
+                                </select>
+                              </label>
+                              <label for="cover-letter">Cover letter
+                                <textarea id="letter" name="cover-letter" rows="3" cols="30" placeholder="Write your letter..."></textarea>
+                              </label>
+                            </fieldset>
+                            <fieldset>
+                                <label for="terms-and-conditions" name="terms-and-conditions">
+                                    <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+                                </label>
+                            </fieldset>
+                            <input type="submit" value="Submit" />
+                          </form>
+                    </form>
+                </div>
+            </section>
+            <section id="contact-section">
+                <div id="contact-links">
+                    <a href="" target="_blank" class="btn contact-details">
+                        <i class="fab fa-facebook-square">
+                        </i>
+                        "Facebook"
+                    </a>
+                    <a href="https://mailto:hi@bitcoinpizza.com" class="btn contact-details">
+                        <i class="fab fa-at"></i>
+                        "Send a mail"
+                      </a>
+                    <a href="tel:555-555-5555" class="btn contact-details">
+                        <i class="fab fa-mobile-alt"></i>
+                        "Call us"
+                      </a>
+                </div>
+            </section>
+            <!--Nav End-->
+            <section id="faq">
+                <!--Fill this-->
+            </section>
+            <section id="nutritional-info">
+                <!--Fill this-->
+            </section>
+            <section id="terms-of-use">
+                <!--Fill this-->
+            </section>
+            <section id="privacy-cookies">
+                <!--Fill this-->
+            </section>
+            <section id="hodler-discount">
+                <div id="hodler-banner">
+                    <img id="hodler" src="" alt="hodler discount!" />
+                </div>
+            </section>
+            <footer>
+                <p>
+                  " **This is just a fake store. All the products and location details given are not real. "
+                </p>
+                <p>
+                  "Powered by "
+                  <a href="https://github.com/m-nahuel" target="_blank">MNahuel</a>
+                </p>
+              </footer>
+        </div>
+    </body>
+</html>
