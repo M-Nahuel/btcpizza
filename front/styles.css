@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    display: block;
+}
+
+#container{
+    position:relative;
+}
+
+header{
+    background-color: lightblue;
+    position:fixed;
+    top:0;
+    width:100%;
+    max-height:5vh;
+    min-height:75px;
+    display:flex;
+    justify-content:space-around;
+    padding:0;
+}
+
+.logo{
+    width:20vw;
+    height:5vh;
+    position:fixed;
+    
+}
