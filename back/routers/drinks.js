@@ -4,7 +4,7 @@ const {drinks} = require('../data/menu.js').menu;
 
 const routerDrinks = express.Router();
 
-routerDrinks.use(expreess.json());
+routerDrinks.use(express.json());
 
 routerDrinks.get('/', (req, res) => {
     res.json(drinks);
@@ -25,7 +25,7 @@ routerDrinks.get('/:type', (req, res) => {
     res.json(results);
 });
 
-routerDrinks.get('./:type/:price', (req, res) => {
+routerDrinks.get('/:type/:price', (req, res) => {
     const type = req.params.type;
     const price = req.params.price;
     const results = drinks.filter(menu => menu.type === type && menu.price === price);
@@ -37,10 +37,10 @@ routerDrinks.get('./:type/:price', (req, res) => {
     res.json(results);
 });
 ////////
-routerDrinks.post('./', (req, res) => {
-    let newDrink = req.drink;
+routerDrinks.post('/', (req, res) => {
+    let newDrink = req.body;
     drinks.push(newDrink);
-    res.json(drink);
+    res.json(drinks);
 });
 
 ////
@@ -62,6 +62,12 @@ routerDrinks.patch('/:id', (req, res) => {
     const id = req.params.id;
 
     const index = drinks.findIndex(drinks => drinks.id == id);
+
+    if (index >= 0) {
+        Object.assign(drinks[index], modDrink);
+    }
+
+    res.json(drinks);
 });
 
 routerDrinks.delete('/:id', (req, res) => {
