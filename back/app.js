@@ -1,14 +1,14 @@
 const express = require('express');
 const app = express();
 
-const {menu} = require('./data/menu.js');
+const { menu } = require('./data/menu.js');
 
 //////
-const routerDrinks = require('./routers.drinks.js');
-app.use('/api/menu/drinks');
+const routerDrinks = require('./routers/drinks');
+app.use('/api/menu/drinks', routerDrinks);
 
-const routerToppings = require('./routers/toppings.js');
-app.use('/api/menu/toppings');
+const routerToppings = require('./routers/toppings');
+app.use('/api/menu/toppings', routerToppings);
 
 //////
 app.get('/', (req, res) => {
