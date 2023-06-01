@@ -1,6 +1,6 @@
 const express = require('express');
 
-const {drinks} = require('../data/menu.js').menu;
+const { drinks } = require('../data/menu.js').menu;
 
 const routerDrinks = express.Router();
 
