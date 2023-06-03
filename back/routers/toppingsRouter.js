@@ -1,4 +1,4 @@
-const express  = require('express');
+const express = require('express');
 
 const { toppings } = require('../data/menu.js').menu;
 

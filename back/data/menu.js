@@ -15,8 +15,8 @@ class Menu {
         this.toppings = [];
     }
 ////Drinks constructor
-    addDrink(id, type, brand, flavor, stock, price, addProp = {}) {
-        const drink = new Items(id, type, brand, flavor, stock, price, {
+    addDrink(id, type, brand, stock, price, flavor, addProp = {}) {
+        const drink = new Items(id, type, brand, stock, price, {
             flavor,
             ...addProp,
         });
@@ -32,9 +32,9 @@ class Menu {
 const menu = new Menu();
 
 ////Add Drinks here
-menu.addDrink(1, 'carbonated', 'btcdrinks', 'cola', 100, 2);
-menu.addDrink(2, 'beer', 'wenbeer', 'lager', 100, 3);
-menu.addDrink(3, 'water', 'wtx', 'plain', 50, 1);
+menu.addDrink(1, 'carbonated', 'btcdrinks', 100, 2, 'cola');
+menu.addDrink(2, 'beer', 'wenbeer', 100, 3, 'lager');
+menu.addDrink(3, 'water', 'wtx', 50, 1, 'plain');
 
 ////Add Toppings here
 menu.addPizza(1, 'classic', 'mozzarella', 30, 8);
