@@ -6,8 +6,9 @@
         <!--<link rel="stylesheet" href="styles.css">-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="main.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- <script type="text/javascript" src="Scripts/bootstrap.bundle.min.js"></script> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <title>Bitcoin Pizza</title>
     </head>
     <body>
@@ -15,39 +16,47 @@
             <header>
                 <div class="row">
                     <!--Replace this-->
-                    <div class="col-xs-1">
-                        <img class="logo-img img-responsive" src="./assets/pizza-shop.svg" alt="logo" />
+                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-4 col-xxl-3">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img class="logo-img img-responsive" src="./assets/pizza-shop.svg" alt="logo" />
+                            </div>
+                            <div class="col-xs-8">
+                                <h1 class="text-primary"><i class="fa-brands fa-bitcoin"></i>itcoin Pizza</h1>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cols-xs-4 title">
-                        <h1 class="text-primary"><i class="fa-brands fa-bitcoin"></i>itcoin Pizza</h1>
-                    </div>
-                    <div class="col-xs-6">
+                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-6 col-xxl-3">
                         <nav id="navbar" class="nav">
                             <ul class="nav-list">
                                 <div class="row">
-                                    <div class="col-xs-2">
+                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
                                         <li>
                                             <a href="#home-section" class="nav-link"><i class="fa fa-home"></i> Home</a>
                                         </li>
                                     </div>
-                                    <div class="col-xs-2">                                        <li>
+                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
+                                        <li>
                                             <a href="#order-section" class="nav-link"><i class="fa fa-motorcycle"></i> Order Now</a>
                                         </li>
                                     </div>
-                                    <div class="col-xs-2">                                        <li>
+                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
                                             <a href="#locations-section" class="nav-link"><i class="fa fa-map-pin"></i> Locations</a>
                                         </li>
                                     </div>
-                                    <div class="col-xs-2">                                        <li>
+                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
+                                        <li>
                                             <a href="#about-section" class="nav-link"><i class="fa fa-info"></i> About us</a>
                                         </li>
                                     </div>
-                                    <div class="col-xs-2">                                        <li>
+                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
+                                        <li>
                                             <a href="#work-section" class="nav-link"><i class="fa fa-briefcase"></i> Work at Bitcoin Pizza's</a>
                                             <p class="text-danger">We're Hiring!</p>
                                         </li>
                                     </div>
-                                    <div class="col-xs-2">                                        <li>
+                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
+                                        <li>
                                             <a href="#contact-section" class="nav-link"><i class="fa fa-address-card"></i> Contact</a>
                                         </li>
                                     </div>
@@ -55,51 +64,41 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-xs-1" id="lang">
+                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-3">
+                        <!--
                         <label for="language"><i class="fa fa-globe"></i> Language</label>
                             <select name="language" id="language">
                                 <option value="english">English</option>
                               <option value="spanish">Español</option>
                             </select>
-                    </div>
-                </div>
-                <!--Add profile links & sections-->
-                <div id="user-profile">
-                    <a href="#user-section" class="navbar-icon">
-                        <!--Add img
-                        <img src="" />-->
-                        <i class="fa fa-user"></i>
-                    </a>
-                    <div class="dropdown">
-                        <ul>
-                            <li><a href="#login-section">Login</a></li>
-                            <li><a href="#register-section">Register</a></li>
-                        </ul>
+                        -->
+                        <div id= "language" class="dropdown col-xs-6">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-globe"></i> Language
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><button class="dropdown-item" type="button" id="english">English</button></li>
+                              <li><button class="dropdown-item" type="button" id="spanish">Spanish</button></li>
+                            </ul>
+                        </div>
+                        <!--Add profile links & sections-->
+                        <div id="user-profile" class="col-xs-6">
+                            <a href="#user-section" class="navbar-icon">
+                                <!--Add img
+                                <img src="" />-->
+                                <i class="fa fa-user"></i>
+                            </a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="#login-section" class="nav-link">Login</a></li>
+                                    <li><a href="#register-section" class="nav-link">Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
             <main>
-                <section id="user-login" class="pg-section">
-                    <div id="user">
-                        <!--add url-->
-                        <form method="post" action=''>
-                            <fieldset>
-                              <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
-                              <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-                              <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-                              <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
-                            </fieldset>
-                            <fieldset>
-                              <label for="terms-and-conditions" name="terms-and-conditions">
-                                <!--add url-->
-                                <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="">terms and conditions</a>
-                              </label>
-                            </fieldset>
-                            <input type="submit" value="Submit" />
-                          </form>
-                      
-                    </div>
-                </section>
                 <section id="home-section" class="pg-section">
                     <!--Fix distribution of elements-->
                     <div class="row">
@@ -240,6 +239,51 @@
                             <i class="fab fa-mobile-alt"></i>
                             "Call us"
                           </a>
+                    </div>
+                </section>
+                <!--add url
+                <section id="user-login" class="pg-section">
+                    <div id="user">
+                        <form method="post" action=''>
+                            <fieldset>
+                              <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                              <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                              <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+                              <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+                            </fieldset>
+                            <fieldset>
+                              <label for="terms-and-conditions" name="terms-and-conditions">
+                                <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="">terms and conditions</a>
+                              </label>
+                            </fieldset>
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </section>-->
+                <section id="login-section" class="pg-section">
+                    <div class="container py-5 h-100">
+                      <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                            <div class="card-body p-5 text-center">
+                  
+                              <h3 class="mb-5">Sign in</h3>
+                  
+                              <div class="form-outline mb-4">
+                                <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+                                <label class="form-label" for="typeEmailX-2">Email</label>
+                              </div>
+                  
+                              <div class="form-outline mb-4">
+                                <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                                <label class="form-label" for="typePasswordX-2">Password</label>
+                              </div>
+                                                
+                              <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>                 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </section>
                 <!--Nav End-->
