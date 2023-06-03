@@ -1,6 +1,6 @@
 const express  = require('express');
 
-const {toppings} = require('../data/menu.js').menu;
+const { toppings } = require('../data/menu.js').menu;
 
 const routerToppings = express.Router();
 

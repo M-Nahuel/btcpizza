@@ -3,12 +3,16 @@ const app = express();
 
 const { menu } = require('./data/menu.js');
 
-//////
+//Order Section
 const routerDrinks = require('./routers/drinks');
 app.use('/api/menu/drinks', routerDrinks);
 
 const routerToppings = require('./routers/toppings');
 app.use('/api/menu/toppings', routerToppings);
+
+//Locations
+const routerLocations = require('./routers/locations')
+app.use('/api/locations', routerLocations);
 
 //////
 app.get('/', (req, res) => {
@@ -21,6 +25,7 @@ app.get('/api/menu', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-    console.log(`Listening at port: ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`Listening at port: ${PORT}`);
+// });
+
