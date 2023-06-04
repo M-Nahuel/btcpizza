@@ -11,22 +11,23 @@
         <title>Bitcoin Pizza</title>
     </head>
     <body>
-        <div class="container-fluid" id="container">
+        <div class="container-flui" id="container">
             <header>
+                <nav id="navbar" class="nav navbar navbar-expand">
                 <div class="row">
                     <!--Replace this-->
-                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-4 col-xxl-3">
-                        <div class="row">
-                            <div class="col-xs-4">
+                    <!-- <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-4 col-xxl-3"> -->
+                        <!-- <div class="row"> -->
+                            <div class="col-xl-1">
                                 <img class="logo-img img-fluid" src="./assets/btcPizzaCartoonBlack.jpg" alt="logo" />
                             </div>
-                            <div class="col-xs-8">
+                            <div class="col-xl-2">
                                 <h1 class="text-primary"><i class="fa-brands fa-bitcoin"></i>itcoin Pizza</h1>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-6 col-xxl-3">
-                        <nav id="navbar" class="nav">
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-6 col-xxl-3"> -->
+                        <div class="col-xl-7">
                             <ul class="nav-list">
                                 <div class="row">
                                     <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
@@ -61,9 +62,9 @@
                                     </div>
                                 </div>
                             </ul>
-                        </nav>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-3">
+                        </div>
+                    <!-- </div> -->
+                    <!-- <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-3"> -->
                         <!--
                         <label for="language"><i class="fa fa-globe"></i> Language</label>
                             <select name="language" id="language">
@@ -71,7 +72,7 @@
                               <option value="spanish">Español</option>
                             </select>
                         -->
-                        <div id= "language" class="dropdown col-xs-6">
+                        <div id= "language" class="dropdown col-xl-1">
                             <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa fa-globe"></i> Language
                             </button>
@@ -81,69 +82,70 @@
                             </ul>
                         </div>
                         <!--Add profile links & sections-->
-                        <div id="user-profile" class="col-xs-6">
-                            <a href="#user-section" class="navbar-icon">
-                                <!--Add img
-                                <img src="" />-->
-                                <i class="fa fa-user"></i>
-                            </a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li><a href="#login-section" class="nav-link">Login</a></li>
-                                    <li><a href="#register-section" class="nav-link">Register</a></li>
+                        <div id="user-profile" class="col-xl-1">
+                            <div class="dropdown col-xl-1">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <!--Add img
+                                        <img src="" />-->
+                                        <i class="fa fa-user"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><button class="dropdown-item" type="button" id="login"><a href="#login-section" class="nav-link">Login</a></button></li>
+                                    <li><button class="dropdown-item" type="button" id="register"><a href="#register-section" class="nav-link">Register</a></button></li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
+                </nav>
             </header>
             <main>
                 <section id="home-section" class="pg-section">
                     <!--Fix distribution of elements-->
                     <div class="row">
-                        <div class="col-xs-4">
+                        <div class="col-xl-4">
                             <h3 class="text-primary text-center">Menu</h3>
                         </div>
-                        <div class="col-xs-2">
+                        <div class="col-xl-2">
                             <button class="btn">Pick a Random Topping for me!</button>
                         </div>
                     </div>
                     <div class="row">
                         <!--Replace this with available toppings-->
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza1.jpg" alt="pizza"/>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza2.jpg" alt="pizza"/>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza3.jpg" alt="pizza"/>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza4.jpg" alt="pizza"/>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza1.jpg" alt="pizza"/>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza2.jpg" alt="pizza"/>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza3.jpg" alt="pizza"/>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza4.jpg" alt="pizza"/>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza1.jpg" alt="pizza"/>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza2.jpg" alt="pizza"/>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza3.jpg" alt="pizza"/>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xl-3">
                             <img class="menu-img img-responsive" src="./assets/pizza4.jpg" alt="pizza"/>
                         </div>
                     </div>
