@@ -8,23 +8,20 @@ html{
     display: block;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
 #container{
-    position:relative;
+    position:absolute;
 }
 
 header{
-    display: flex;
-    justify-content: space-evenly;
     position: fixed;
 }
 
-body{
-    position: relative;
-}
-
-.title{
-    width: 10%;
-    height: 30%;
-    margin: 0;
-    padding: 0;
-}
