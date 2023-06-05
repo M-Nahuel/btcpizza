@@ -68,51 +68,120 @@
                 <section id="home-section" class="pg-section">
                     <!--Fix distribution of elements-->
                     <div class="row">
-                        <div class="col-xl-4">
+                        <div class="col-xl-12">
                             <h3 class="text-primary text-center">Menu</h3>
-                        </div>
-                        <div class="col-xl-2">
                             <button class="btn">Pick a Random Topping for me!</button>
                         </div>
-                    </div>
-                    <div class="row">
-                        <!--Replace this with available toppings-->
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza1.jpg" alt="pizza"/>
-                        </div>
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza2.jpg" alt="pizza"/>
-                        </div>
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza3.jpg" alt="pizza"/>
-                        </div>
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza4.jpg" alt="pizza"/>
-                        </div>
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza1.jpg" alt="pizza"/>
-                        </div>
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza2.jpg" alt="pizza"/>
-                        </div>
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza3.jpg" alt="pizza"/>
-                        </div>
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza4.jpg" alt="pizza"/>
-                        </div>
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza1.jpg" alt="pizza"/>
-                        </div>
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza2.jpg" alt="pizza"/>
-                        </div>
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza3.jpg" alt="pizza"/>
-                        </div>
-                        <div class="col-xl-3">
-                            <img class="menu-img img-responsive" src="./assets/pizza4.jpg" alt="pizza"/>
-                        </div>
+                        <div id="carouselMenu" class="carousel slide col-xl-12" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                              <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./assets/pepperoni.jpg" class="d-block w-100" alt="Pepperoni pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Pepperoni</h5>
+                                  <p>Ingredients: Tomato sauce, mozzarella cheese, pepperoni slices.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/margherita.jpg" class="d-block w-100" alt="Margherita pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Margherita</h5>
+                                  <p>Ingredients: Tomato sauce, mozzarella cheese, fresh basil leaves.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/hawaiian.jpg" class="d-block w-100" alt="Hawaiian pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Hawaiian</h5>
+                                  <p>Ingredients: Tomato sauce, mozzarella cheese, ham or Canadian bacon, pineapple chunks.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/meat.jpg" class="d-block w-100" alt="Meat pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Meat Lovers</h5>
+                                  <p>Ingredients: Tomato sauce, mozzarella cheese, pepperoni, sausage, bacon, ground beef.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/bbqChicken.jpg" class="d-block w-100" alt="BBQ chicken pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>BBQ Chicken</h5>
+                                  <p>Ingredients: BBQ sauce, mozzarella cheese, grilled chicken, red onions, cilantro.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/veggie.jpg" class="d-block w-100" alt="Veggie pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Veggie Lovers</h5>
+                                  <p>Ingredients: Tomato sauce, mozzarella cheese, bell peppers, mushrooms, onions, olives, spinach.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/fourCheese.jpg" class="d-block w-100" alt="Four Cheese pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Four Cheese</h5>
+                                  <p>Ingredients: Tomato sauce, mozzarella cheese, cheddar cheese, Parmesan cheese, Gorgonzola or blue cheese.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/supreme.jpg" class="d-block w-100" alt="Supreme pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Supreme</h5>
+                                  <p>Ingredients: Tomato sauce, mozzarella cheese, pepperoni, sausage, bell peppers, onions, black olives, mushrooms.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/buffaloChicken.jpg" class="d-block w-100" alt="Buffalo Chicken pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Buffalo Chicken</h5>
+                                  <p>Ingredients: Buffalo sauce, mozzarella cheese, grilled or breaded chicken, red onions, blue cheese crumbles.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/prosciutto.jpg" class="d-block w-100" alt="Margherita with Prosciutto pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Margherita with Prosciutto</h5>
+                                  <p>Ingredients: Tomato sauce, mozzarella cheese, fresh basil leaves, prosciutto slices.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/white.jpg" class="d-block w-100" alt="white pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>White Pizza</h5>
+                                  <p>Ingredients: Olive oil or garlic-infused oil, mozzarella cheese, ricotta cheese, Parmesan cheese, garlic, herbs.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/spinach.jpg" class="d-block w-100" alt="Spinach and Feta pizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Spinach & Feta</h5>
+                                  <p>Ingredients: Tomato sauce or olive oil, mozzarella cheese, feta cheese, spinach leaves, red onions.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenu" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
                     </div>
                 </section>
                 <section id="order-section" class="pg-section">
