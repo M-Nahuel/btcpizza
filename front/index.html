@@ -11,91 +11,56 @@
         <title>Bitcoin Pizza</title>
     </head>
     <body>
-        <div class="container-flui" id="container">
+        <div class="container-fluid" id="container">
             <header>
-                <nav id="navbar" class="nav navbar navbar-expand">
-                <div class="row">
-                    <!--Replace this-->
-                    <!-- <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-4 col-xxl-3"> -->
-                        <!-- <div class="row"> -->
-                            <div class="col-xl-1">
-                                <img class="logo-img img-fluid" src="./assets/btcPizzaCartoonBlack.jpg" alt="logo" />
-                            </div>
-                            <div class="col-xl-2">
-                                <h1 class="text-primary"><i class="fa-brands fa-bitcoin"></i>itcoin Pizza</h1>
-                            </div>
-                        <!-- </div> -->
-                    <!-- </div> -->
-                    <!-- <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-6 col-xxl-3"> -->
-                        <div class="col-xl-7">
-                            <ul class="nav-list">
-                                <div class="row">
-                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
-                                        <li>
-                                            <a href="#home-section" class="nav-link"><i class="fa fa-home"></i> Home</a>
-                                        </li>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
-                                        <li>
-                                            <a href="#order-section" class="nav-link"><i class="fa fa-motorcycle"></i> Order Now</a>
-                                        </li>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
-                                            <a href="#locations-section" class="nav-link"><i class="fa fa-map-pin"></i> Locations</a>
-                                        </li>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
-                                        <li>
-                                            <a href="#about-section" class="nav-link"><i class="fa fa-info"></i> About us</a>
-                                        </li>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
-                                        <li>
-                                            <a href="#work-section" class="nav-link"><i class="fa fa-briefcase"></i> Work at Bitcoin Pizza's</a>
-                                            <p class="text-danger">We're Hiring!</p>
-                                        </li>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-2">
-                                        <li>
-                                            <a href="#contact-section" class="nav-link"><i class="fa fa-address-card"></i> Contact</a>
-                                        </li>
-                                    </div>
-                                </div>
-                            </ul>
-                        </div>
-                    <!-- </div> -->
-                    <!-- <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xl-2 col-xxl-3"> -->
-                        <!--
-                        <label for="language"><i class="fa fa-globe"></i> Language</label>
-                            <select name="language" id="language">
-                                <option value="english">English</option>
-                              <option value="spanish">Español</option>
-                            </select>
-                        -->
-                        <div id= "language" class="dropdown col-xl-1">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-globe"></i> Language
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><button class="dropdown-item" type="button" id="english">English</button></li>
-                              <li><button class="dropdown-item" type="button" id="spanish">Spanish</button></li>
-                            </ul>
-                        </div>
-                        <!--Add profile links & sections-->
-                        <div id="user-profile" class="col-xl-1">
-                            <div class="dropdown col-xl-1">
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <!--Add img
-                                        <img src="" />-->
-                                        <i class="fa fa-user"></i>
-                                </button>
+                <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+                <div class="container-fluid navbar-full-width">
+                    <a href="#home-section" class="navbar-brand h1 mb-0">
+                        <img src="./assets/btcPizzaCartoonBlack.jpg" class="d-inline-block align-text-top" width="40" height="40" alt="pizza logo">
+                        <!--i class="fa fa-bitcoin"></i-->Bitcoin Pizza
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a href="#home-section" class="nav-link active" aria-current="page"><i class="fa fa-home"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#order-section" class="nav-link"><i class="fa fa-motorcycle"></i> Order Now</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about-section" class="nav-link"><i class="fa fa-info"></i> About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#work-section" class="nav-link"><i class="fa fa-briefcase"></i> Work with us!</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact-section" class="nav-link"><i class="fa fa-address-card"></i> Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-globe"></i> Language
+                                </a>
                                 <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button" id="login"><a href="#login-section" class="nav-link">Login</a></button></li>
-                                    <li><button class="dropdown-item" type="button" id="register"><a href="#register-section" class="nav-link">Register</a></button></li>
+                                  <li><a class="dropdown-item" href="#">English</a></li>
+                                  <li><a class="dropdown-item" href="#">Español</a></li>
                                 </ul>
-                            </div>
-                        </div>
-                    <!-- </div> -->
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#login-section">Login</a></li>
+                                  <li><a class="dropdown-item" href="#register-section">Register</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#profile-section">Profile</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 </nav>
             </header>
