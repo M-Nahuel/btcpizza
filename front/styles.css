@@ -21,6 +21,14 @@ body{
     position:absolute;
 }
 
+nav{
+    z-index:10;
+}
+
+#carouselMenu{
+    z-index: 1;
+}
+
 header{
     position: fixed;
 }
