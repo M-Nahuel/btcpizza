@@ -21,11 +21,11 @@ body{
     position:absolute;
 }
 
-nav{
+header{
     z-index:10;
 }
 
-#carouselMenu{
+section{
     z-index: 1;
 }
 
