@@ -12,4 +12,14 @@ $(document).ready(function() {
 
         $(target).fadeIn(500);
     });
+
+    $('#random').click(function() {
+        $('#carouselMenu').carousel({ interval: 100 });
+        
+        let totalSlides = $('#carouselMenu .carousel-item').length;
+        let randSlide = Math.floor(Math.random() * totalSlides);
+        
+        $('#carouselMenu').carousel(randSlide);
+        $('#carouselMenu').carousel('pause');
+      });
 });
